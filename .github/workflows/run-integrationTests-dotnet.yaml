@@ -119,7 +119,7 @@ jobs:
         #     k3s kubectl exec -n payload-app deploy/${{ inputs.app_name }} -- bash -c "/workspace/${{ inputs.app_name }}/.git/spacefx-dev/dotnet/dotnet test --verbosity detailed /workspace/${{ inputs.app_name }}/test/integrationTests/bin/Debug/net6.0/integrationTests.dll --logger \"junit;LogFileName=/workspace/${{ inputs.app_name }}/.git/test-results.xml\""
         # ) &
 
-        k3s kubectl exec -n payload-app deploy/${{ inputs.app_name }} -- bash -c "/workspace/${{ inputs.app_name }}/.git/spacefx-dev/dotnet/dotnet test --verbosity detailed /workspace/${{ inputs.app_name }}/test/integrationTests/bin/Debug/net6.0/integrationTests.dll --logger \"junit;LogFileName=/workspace/${{ inputs.app_name }}/.git/test-results.xml\""
+        k3s kubectl exec -n payload-app deploy/${{ inputs.app_name }} -- bash -c "/workspace/${{ inputs.app_name }}/.git/spacefx-dev/dotnet/dotnet test --verbosity detailed /workspace/${{ inputs.app_name }}/test/integrationTests/bin/Debug/net8.0/integrationTests.dll --logger \"junit;LogFileName=/workspace/${{ inputs.app_name }}/.git/test-results.xml\""
 
         # client_pid=$!
 
