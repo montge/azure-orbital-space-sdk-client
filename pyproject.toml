@@ -2,7 +2,7 @@
 name = "microsoftazurespacefx"
 description = "Write Payload Applications leveraging the Microsoft Azure Orbital Space SDK"
 authors = ["Azure Space SDK"]
-classifiers = ["Development Status :: 3 - Alpha", "Intended Audience :: Developers", "Topic :: Software Development :: Build Tools", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3 :: Only"]
+classifiers = ["Development Status :: 3 - Alpha", "Intended Audience :: Developers", "Topic :: Software Development :: Build Tools", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3 :: Only"]
 version = "0.11.0"
 readme = "README.md"
 
@@ -15,11 +15,11 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.12"
+python = ">=3.9,<3.14"
 pythonnet = "^3.0.3"
-grpcio-tools = "^1.26.0"
-grpcio = "^1.26.0"
-protobuf = "^3.20.1"
+grpcio-tools = "^1.48.2"
+grpcio = "^1.48.2"
+protobuf = "^4.25.8"
 
 [tool.poetry.group.spacefx-dev.dependencies]
 pytest = "^7.2.1"
